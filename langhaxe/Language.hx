@@ -1,0 +1,5 @@
+package langhaxe;
+
+class Language {
+    
+}
