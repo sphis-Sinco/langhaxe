@@ -7,9 +7,6 @@
   "version": "0.0.2",
   "releasenote": "Fixed can't cast dynobj to haxe.ds.StringMap",
   "contributors": ["Sinco"],
-  "dependencies": {
-    "lime": "",
-    "haxe": ""
-  },
+  "dependencies": {},
   "main": ""
 }
