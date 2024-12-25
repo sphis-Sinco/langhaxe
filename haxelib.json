@@ -1,0 +1,13 @@
+{
+  "name": "Langhaxe",
+  "url": "https://github.com/sphis_Sinco/langhaxe/",
+  "license": "MIT",
+  "tags": ["utility"],
+  "description": "This library is for languages.",
+  "version": "0.0.1",
+  "classPath": "source/",
+  "releasenote": "Initial release, everything is how it should.",
+  "contributors": ["Sinco"],
+  "dependencies": {},
+  "main": ""
+}
