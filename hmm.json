@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    {
+      "name": "openfl",
+      "type": "haxelib",
+      "version": null
+    }
+  ]
+}

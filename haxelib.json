@@ -7,6 +7,8 @@
   "version": "0.0.1",
   "releasenote": "Initial release, everything is how it should.",
   "contributors": ["Sinco"],
-  "dependencies": {},
+  "dependencies": {
+    "openfl": ""
+  },
   "main": ""
 }
