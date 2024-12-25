@@ -36,9 +36,10 @@ class PlayState extends FlxState
 	function updateText() {
 		if (lang == 'es') lang = 'en';
 		else lang = 'es';
+		langFile = Json.parse(Assets.getText(Language.getLanguageFilePath(lang)));
 
-		var newtext:Dynamic = langFile.phrases.get('hello_world');
-		newtext += '\n' + langFile.phrases.get('how_are_you');
+		var newtext:Dynamic = langFile.phrases.hello_world;
+		newtext += '\n' + langFile.phrases.how_are_you;
 		cooltext.text = newtext.toString();
 		cooltext.screenCenter();
 	}

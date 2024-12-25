@@ -4,11 +4,12 @@
   "license": "MIT",
   "tags": ["utility"],
   "description": "This library is for languages.",
-  "version": "0.0.2-alpha.3",
-  "releasenote": "Null Object Reference Fixer",
+  "version": "0.0.2",
+  "releasenote": "Fixed can't cast dynobj to haxe.ds.StringMap",
   "contributors": ["Sinco"],
   "dependencies": {
-    "openfl": ""
+    "lime": "",
+    "haxe": ""
   },
   "main": ""
 }

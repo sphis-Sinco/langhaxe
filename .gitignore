@@ -1,2 +1,8 @@
+# installed libraries
 .haxelib
+
+# haxelib
 langhaxe.zip
+
+# this was just for testing while indev
+example/source/langhaxe/LangHaxeOverride.hx
