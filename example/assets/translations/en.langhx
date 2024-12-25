@@ -2,7 +2,7 @@
   "name": "English",
   "lang_ver": 1,
   "phrases": {
-    "hello_world": "Hello World",
-    "how_are_you": "How are you"
+    "yo_dude": "Yo Dude",
+    "what_are_you_doing": "What are you doing"
   }
 }

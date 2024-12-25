@@ -4,8 +4,8 @@
   "license": "MIT",
   "tags": ["utility"],
   "description": "This library is for languages.",
-  "version": "0.0.2",
-  "releasenote": "Fixed can't cast dynobj to haxe.ds.StringMap",
+  "version": "0.0.3",
+  "releasenote": "readLang function",
   "contributors": ["Sinco"],
   "dependencies": {},
   "main": ""

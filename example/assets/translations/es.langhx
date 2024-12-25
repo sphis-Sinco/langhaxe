@@ -2,7 +2,7 @@
   "name": "Spanish",
   "lang_ver": 1,
   "phrases": {
-    "hello_world": "Hola Mundo",
-    "how_are_you": "Cómo estás"
+    "yo_dude": "Yo amigo",
+    "what_are_you_doing": "Qué estás haciendo"
   }
 }

@@ -1,3 +1,8 @@
+# 0.0.3 - 12/25/2024
+- readLang function
+- function documentation
+- lang_ver is now a Float value instead of a string value
+
 # 0.0.2 - 12/25/2024
 - Fixed can't cast dynobj to haxe.ds.StringMap
 ## 0.0.2-alpha.3 - 12/25/2024

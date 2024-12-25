@@ -7,6 +7,6 @@ typedef LangHaxe = {
 }
 
 typedef PhrasesJson = {
-	var hello_world:String;
-	var how_are_you:String;
+	var yo_dude:String;
+	var what_are_you_doing:String;
 }

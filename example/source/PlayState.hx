@@ -16,8 +16,6 @@ class PlayState extends FlxState
 
 	override public function create()
 	{
-		langFile = Json.parse(Assets.getText(Language.getLanguageFilePath(lang)));
-
 		add(cooltext);
 		cooltext.alignment = CENTER;
 		updateText();
@@ -36,10 +34,10 @@ class PlayState extends FlxState
 	function updateText() {
 		if (lang == 'es') lang = 'en';
 		else lang = 'es';
-		langFile = Json.parse(Assets.getText(Language.getLanguageFilePath(lang)));
+		langFile = Language.readLang(lang);
 
-		var newtext:Dynamic = langFile.phrases.hello_world;
-		newtext += '\n' + langFile.phrases.how_are_you;
+		var newtext:Dynamic = langFile.phrases.yo_dude;
+		newtext += '\n' + langFile.phrases.what_are_you_doing;
 		cooltext.text = newtext.toString();
 		cooltext.screenCenter();
 	}
