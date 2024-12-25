@@ -1,5 +1,7 @@
 package;
 
+import lime.utils.Assets;
+import haxe.Json;
 import langhaxe.LangHaxe;
 import flixel.FlxG;
 import langhaxe.Language;
@@ -14,7 +16,7 @@ class PlayState extends FlxState
 
 	override public function create()
 	{
-		langFile = Language.readLanguageFile(lang);
+		langFile = Json.parse(Assets.getText(Language.getLanguageFilePath(lang)));
 
 		add(cooltext);
 		cooltext.alignment = CENTER;
