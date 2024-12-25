@@ -37,7 +37,7 @@ class PlayState extends FlxState
 		if (lang == 'es') lang = 'en';
 		else lang = 'es';
 
-		var newtext:String = langFile.phrases.get('hello_world');
+		var newtext:Dynamic = langFile.phrases.get('hello_world');
 		newtext += '\n' + langFile.phrases.get('how_are_you');
 		cooltext.text = newtext.toString();
 		cooltext.screenCenter();
