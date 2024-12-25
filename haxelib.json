@@ -4,8 +4,8 @@
   "license": "MIT",
   "tags": ["utility"],
   "description": "This library is for languages.",
-  "version": "0.0.1",
-  "releasenote": "Initial release, everything is how it should.",
+  "version": "0.0.2-p1",
+  "releasenote": "Null Object Reference Fixer",
   "contributors": ["Sinco"],
   "dependencies": {
     "openfl": ""
