@@ -1,5 +1,6 @@
 package;
 
+import langhaxe.LanguageManager;
 import lime.utils.Assets;
 import haxe.Json;
 import langhaxe.LangHaxe;
@@ -34,10 +35,11 @@ class PlayState extends FlxState
 	function updateText() {
 		if (lang == 'es') lang = 'en';
 		else lang = 'es';
-		langFile = Language.readLang(lang);
+		LanguageManager.LANGUAGE = lang;
+		PhraseManager.init();
 
-		var newtext:Dynamic = langFile.phrases.yo_dude;
-		newtext += '\n' + langFile.phrases.what_are_you_doing;
+		var newtext:Dynamic = PhraseManager.getPhrase("yo dude");
+		newtext += '\n' + PhraseManager.getPhrase("what are you doing");
 		cooltext.text = newtext.toString();
 		cooltext.screenCenter();
 	}

@@ -1,3 +1,8 @@
+# 0.0.4 - 12/25/2024
+these additions come from using langhaxe for contributions to another haxeflixel game, [Linetapper](https://github.com/corecathx/LineTapper/tree/main).
+- LangHaxe now has a Phrase manager
+- There is a LanguageManager template file
+
 # 0.0.3 - 12/25/2024
 - readLang function
 - function documentation
