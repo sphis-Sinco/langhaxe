@@ -1,0 +1,8 @@
+{
+  "name": "Spanish",
+  "lang_ver": 1,
+  "phrases": {
+    "hello_world": "Hola Mundo",
+    "how_are_you": "Cómo estás"
+  }
+}
