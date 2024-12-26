@@ -13,7 +13,6 @@ class PlayState extends FlxState
 {
 	var cooltext:FlxText = new FlxText(0,0,0,"Hello World", 32);
 	var lang:String = 'es';
-	var langFile:LangHaxe;
 
 	override public function create()
 	{

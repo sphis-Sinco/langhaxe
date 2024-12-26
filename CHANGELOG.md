@@ -1,7 +1,13 @@
+# 0.0.5 - 12/25/2024
+these additions come from using langhaxe for a haxeflixel game im making.
+- Cleaned up LangHaxe (projects now should only have a `langhaxe/LangHaxe.hx` file if they are adding a metadata)
+
 # 0.0.4 - 12/25/2024
 these additions come from using langhaxe for contributions to another haxeflixel game, [Linetapper](https://github.com/corecathx/LineTapper/tree/main).
 - LangHaxe now has a Phrase manager
 - There is a LanguageManager template file
+- Added asset_suffix optional key
+- Added Optional keys (all of them aren't required)
 
 # 0.0.3 - 12/25/2024
 - readLang function

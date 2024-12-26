@@ -1,6 +1,5 @@
 package langhaxe;
 
-import langhaxe.Language;
 using StringTools;
 
 typedef LangHaxe =
@@ -8,13 +7,7 @@ typedef LangHaxe =
 	var name:String;
 	var ?asset_suffix:String;
 	var ?lang_ver:Float;
-	var ?phrases:PhrasesJson;
-}
-
-typedef PhrasesJson =
-{
-	var ?yo_dude:String;
-	var ?what_are_you_doing:String;
+	var ?phrases:haxe.DynamicAccess<String>;
 }
 
 class PhraseManager
@@ -41,21 +34,13 @@ class PhraseManager
 
 	public static function getPhrase(phrase:Dynamic, ?fb:Dynamic = null):Dynamic
 	{
-		var json:PhrasesJson = languageList.phrases;
+		var json:haxe.DynamicAccess<String> = languageList.phrases;
 		var fallback:Dynamic = (fb != null ? fb : phrase);
+		var returnValue:Dynamic;
 
 		try
 		{
-			switch (Std.string(phrase).toLowerCase().replace(' ', '_'))
-			{
-				case 'yo_dude':
-					return json.yo_dude;
-				case 'what_are_you_doing':
-					return json.what_are_you_doing;
-
-				default:
-					trace('[PHRASE MANAGER] Unknown phrase: "$phrase"');
-			}
+			returnValue = json.get(Std.string(phrase).toLowerCase().replace(' ', '_'));
 		}
 		catch (e)
 		{
@@ -64,9 +49,9 @@ class PhraseManager
 				trace('[PHRASE MANAGER] Phrase "$phrase" required fallback');
 				PHRASES_REQUIRING_FALLBACK.push(phrase);
 			}
-			return fallback;
+			returnValue = fallback;
 		}
 
-		return fallback;
+		return returnValue;
 	}
 }
